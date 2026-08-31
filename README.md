@@ -18,19 +18,19 @@ The compressed, headerless CSV is stored at
 
 | Column | Description |
 | --- | --- |
-| `date` | Trip date |
-| `hour` | Hour represented by the record |
-| `origin` | Four-character origin station code |
-| `destination` | Four-character destination station code |
-| `trips` | Number of trips for the date-hour-station combination |
+| `date` | Date |
+| `hour` | Hour (24-hour clock) |
+| `origin` | Origin station |
+| `destination` | Destination station |
+| `trips` | BART's `Number of Exits` for the date-hour-origin-destination combination |
 
 The file contains 9,143,257 rows covering all 365 days of 2025, all 24 hours,
-and 50 origin/destination stations. Trip counts sum to 54,507,357.
+and 50 origin/destination stations. Exit counts sum to 54,507,357.
 
-The original download URL, retrieval date, precise definition of `hour`, and
-data redistribution terms are not currently recorded in the repository. Those
-provenance details should be added before presenting the project as a finished
-portfolio piece.
+Source: [BART Ridership Reports](https://www.bart.gov/about/reports/ridership).
+BART documents the hourly origin-destination columns as `Date`, `Hour (24-hour
+clock)`, `Origin Station`, `Destination Station`, and `Number of Exits`. The
+local file's exact download date is not currently recorded in the repository.
 
 ## Current analysis
 
